@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subdomain Takeover PoC - blog.marketo.com</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 60px;
+    }
+    .alert {
+      background-color: #ff4444;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+    }
+    .phish-box {
+      background: #222;
+      border: 1px solid #ff4444;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 8px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 8px;
+      border-radius: 4px;
+      border: none;
+    }
+    button {
+      background-color: #ff4444;
+      color: white;
+      font-weight: bold;
+    }
+    .note {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="alert">
+    ⚠️ Subdomain Takeover Successful – blog.marketo.com is Under External Control ⚠️
+  </div>
+
+  <div class="phish-box">
+    <h2>Login to View Marketing Dashboard</h2>
+    <form>
+      <input type="email" placeholder="Email address" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+
+  <p class="note">This is a harmless PoC to demonstrate potential phishing risk via subdomain takeover.</p>
+</body>
+</html>
+
